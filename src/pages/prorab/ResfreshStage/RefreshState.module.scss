@@ -1,0 +1,101 @@
+.refresh-stage-first-container {
+  width: 90%;
+  background: white;
+  padding: 40px; /* Увеличенный внутренний отступ */
+  border-radius: 15px; /* Уменьшенный радиус границ */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Более мягкая тень */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Более мягкая граница */
+  min-height: 400px;
+  @media (width < 900px) {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Заголовок контейнера */
+.refresh-stage-first-container label {
+  font-size: 24px; /* Увеличенный размер шрифта */
+  font-weight: bold;
+  color: #2c3e50;
+  @media (width < 900px) {
+    font-size: 18px;
+  }
+}
+
+/* Стили для выпадающего списка */
+.refresh-stage-first-container select {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px; /* Увеличенный внутренний отступ */
+  font-size: 18px; /* Увеличенный размер шрифта */
+  margin-bottom: 20px; /* Увеличенный отступ */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: border 0.3s ease;
+}
+
+/* Контейнер для стадий с прокруткой */
+.refresh-stage-container {
+  overflow-y: auto;
+  width: 100%;
+  @media (width < 900px) {
+    margin: 0;
+  }
+}
+
+/* Заголовок и информация о стадии */
+.refresh-stage h3 {
+  margin-bottom: 10px; /* Увеличенный отступ */
+  font-size: 22px; /* Увеличенный размер шрифта */
+  color: #2980b9;
+}
+
+.refresh-stage p {
+  margin-bottom: 10px; /* Увеличенный отступ */
+  font-size: 15px; /* Увеличенный размер шрифта для деталей */
+  color: #7f8c8d;
+}
+
+/* Стили для полей ввода */
+.refresh-stage label {
+  display: block;
+  font-weight: 500;
+  margin-top: 12px; /* Увеличенный отступ */
+  color: #34495e;
+}
+
+.refresh-stage input {
+  width: 100%;
+  padding: 10px; /* Увеличенный внутренний отступ */
+  margin-top: 6px; /* Увеличенный верхний отступ */
+  margin-bottom: 15px; /* Увеличенный нижний отступ */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 15px; /* Увеличенный размер шрифта */
+  color: #2c3e50;
+  transition: border 0.3s ease;
+}
+
+.refresh-stage input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Кнопка сохранения изменений */
+.refresh-stage button {
+  padding: 12px; /* Увеличенный внутренний отступ */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Увеличенный размер шрифта */
+  margin-top: 12px; /* Увеличенный отступ */
+  width: 100%; /* Занять всю ширину */
+  transition: 0.1s;
+  &:active {
+    transform: translate(0, -3px);
+  }
+}

@@ -1,0 +1,79 @@
+.workerDocumentFolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workerDocumentFolder .workerDocumentFolder-container {
+  width: 800px;
+  height: 500px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+
+  border-radius: 15px;
+  @media (width < 900px) {
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+.workerDocumentFolder-container label {
+  font-size: 40px;
+  margin-top: 50px;
+  font-weight: 600;
+  @media (width < 900px) {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.workerDocumentFolder-container input {
+  width: 92%;
+
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 0 20px;
+  @media (width < 900px) {
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.workerDocumentFolder-container select {
+  width: 92%;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  @media (width < 900px) {
+    width: 100%;
+  }
+}
+
+.workerDocumentFolder-container button {
+  height: 50px;
+  background: #6685cf;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 20px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  &:active {
+    transform: translate(0, -3px);
+  }
+  @media (width < 900px) {
+    margin-top: 20px;
+  }
+}

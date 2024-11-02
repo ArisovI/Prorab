@@ -1,0 +1,142 @@
+/* Основные стили страницы */
+.workerStade {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ecf0f1; /* Светлый фон для лучшего контраста */
+    padding: 20px;
+}
+
+/* Стили контейнера для проекта */
+.workerStade-first-container {
+    width: 90%;
+    max-width: 1400px !important; /* Уменьшенная максимальная ширина для более компактного макета */
+    background: white;
+    padding: 30px; /* Увеличенный внутренний отступ */
+    border-radius: 15px; /* Уменьшенный радиус границ */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Более мягкая тень */
+    margin-top: 40px; /* Уменьшенный верхний отступ */
+    margin-bottom: 40px; /* Добавлен нижний отступ для дополнительного пространства */
+    border: 1px solid rgba(0, 0, 0, .1); /* Более мягкая граница */
+    height: 800px;
+}
+
+/* Заголовок контейнера */
+.workerStade-first-container label {
+    font-size: 24px; /* Увеличенный размер шрифта */
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px; /* Увеличенный отступ */
+}
+
+/* Стили для выпадающего списка */
+.workerStade-first-container select {
+    width: 100%;
+    padding: 12px; /* Увеличенный внутренний отступ */
+    font-size: 18px; /* Увеличенный размер шрифта */
+    margin-bottom: 20px; /* Увеличенный отступ */
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: border 0.3s ease;
+}
+
+.workerStade-first-container select:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Контейнер для стадий с прокруткой */
+.stades-container {
+    max-height: 700px; /* Увеличенная максимальная высота для прокрутки */
+    overflow-y: auto;
+    width: 100%;
+    margin-top: 20px; /* Добавлен верхний отступ */
+}
+
+/* Стили карточек стадий */
+.stade-card {
+    padding: 20px; /* Увеличенный внутренний отступ */
+    margin: 50px 0; /* Увеличенный отступ между карточками */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Увеличенный радиус границ */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Более мягкая тень */
+}
+
+/* Заголовок и информация о стадии */
+.stade-card h3 {
+    margin-bottom: 10px; /* Увеличенный отступ */
+    font-size: 22px; /* Увеличенный размер шрифта */
+    color: #2980b9;
+}
+
+.stade-card p {
+    margin-bottom: 10px; /* Увеличенный отступ */
+    font-size: 15px; /* Увеличенный размер шрифта для деталей */
+    color: #7f8c8d;
+}
+
+/* Стили для полей ввода */
+.stade-card label {
+    display: block;
+    font-weight: 500;
+    margin-top: 12px; /* Увеличенный отступ */
+    color: #34495e;
+}
+
+.stade-card input {
+    width: 100%;
+    padding: 10px; /* Увеличенный внутренний отступ */
+    margin-top: 6px; /* Увеличенный верхний отступ */
+    margin-bottom: 15px; /* Увеличенный нижний отступ */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 15px; /* Увеличенный размер шрифта */
+    color: #2c3e50;
+    transition: border 0.3s ease;
+}
+
+.stade-card input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Кнопка сохранения изменений */
+.stade-card button {
+    padding: 12px; /* Увеличенный внутренний отступ */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Увеличенный размер шрифта */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 12px; /* Увеличенный отступ */
+    width: 100%; /* Занять всю ширину */
+}
+
+/* Удобство для маленьких экранов */
+@media (max-width: 768px) {
+    .workerStade-first-container {
+        width: 100%;
+        padding: 20px; /* Увеличенный внутренний отступ для мобильных */
+    }
+
+    .stade-card h3 {
+        font-size: 20px; /* Увеличенный для мобильных */
+    }
+
+    .stade-card input {
+        font-size: 15px; /* Единообразный размер шрифта */
+    }
+
+    .stade-card button {
+        font-size: 15px; /* Единообразный размер кнопки */
+        padding: 10px; /* Увеличенный внутренний отступ */
+    }
+}
+    

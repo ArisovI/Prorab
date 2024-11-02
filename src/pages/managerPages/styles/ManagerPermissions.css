@@ -1,0 +1,15 @@
+.managerPermissions {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.managerPermissions-container {
+    width: 800px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,.2)
+
+}

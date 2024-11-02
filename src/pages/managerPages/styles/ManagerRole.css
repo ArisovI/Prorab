@@ -1,0 +1,68 @@
+.managerRole {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #F9F9F9; /* Light background for better contrast */
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add some padding for better spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.managerRole .role-container {
+    width: 1000px;
+    height: auto; /* Change to auto for flexibility */
+    max-height: 600px; /* Limit max height for better layout */
+    background: white;
+    border-radius: 30px;
+    border: 1px solid #E0E0E0; /* Lighter border for a softer look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding inside the container */
+    transition: box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.managerRole .role-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Elevate on hover */
+}
+
+.role-container select {
+    width: 90%;
+    height: 50px;
+    margin-top: 20px; /* Reduce top margin for better spacing */
+    padding: 10px; /* Add padding for better usability */
+    border-radius: 10px; /* Softer edges */
+    border: 1px solid #BDBDBD; /* Soft border */
+    font-size: 16px; /* Slightly larger font for better readability */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+.role-container select:focus {
+    border-color: #6685CF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.role-container button {
+    width: 80%;
+    height: 50px; /* Adjust height for better proportion */
+    border-radius: 20px;
+    margin-top: 30px; /* Adjusted margin for spacing */
+    background: #6685CF; /* Use a more appealing color */
+    color: white;
+    font-size: 18px; /* Increase font size */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.role-container button:hover {
+    background: #5577A1; /* Darken button color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.role-container button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}

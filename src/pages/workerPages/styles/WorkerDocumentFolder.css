@@ -1,0 +1,49 @@
+.workerDocumentFolder {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.workerDocumentFolder .workerDocumentFolder-container {
+    width: 800px;
+    height: 500px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.workerDocumentFolder-container label {
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.workerDocumentFolder-container input {
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.workerDocumentFolder-container select {
+    width: 92%;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.workerDocumentFolder-container button {
+    width: 90%;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}

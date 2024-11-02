@@ -1,0 +1,100 @@
+.firstPage {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.client-info {
+    width: 486px;
+    height: 800px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar svg {
+    margin-top: 50px;
+}
+
+.avatar h2 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.remont-info {
+    width: 900px;
+    height: 800px;
+    background: white;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+
+.remont-info .header h2 {
+    font-size: 40px;
+    color: #6685CF;
+}
+
+.header {
+    width: 100%;
+    padding: 20px;
+}
+
+.info-chars {
+    display: flex;
+
+}
+.remont-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.string-chars {
+    font-size: 40px;
+    margin-left: 20px;
+    overflow-y: scroll;
+}
+
+.string-chars div {
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.circle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #6685CF;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons h2 {
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    background: #D2DDF8;
+    margin-top: 50px;
+}

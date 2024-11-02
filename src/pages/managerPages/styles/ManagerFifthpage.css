@@ -1,0 +1,64 @@
+.managerFifthpage {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background for contrast */
+    justify-content: center;
+    align-items: center;
+}
+
+.managerFifthpage .fifth-container {
+    width: 1000px;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: white; /* White background for content area */
+    padding: 20px; /* Padding for inner spacing */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between elements */
+}
+
+.managerFifthpage h2 {
+    font-size: 24px; /* Larger heading size */
+    color: #333; /* Darker text color for contrast */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.managerFifthpage label {
+    font-size: 16px; /* Slightly larger font for labels */
+    color: #555; /* Medium gray color */
+}
+
+.managerFifthpage select,
+.managerFifthpage input[type="text"] {
+    padding: 10px; /* Padding for input elements */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Consistent font size */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.managerFifthpage select:focus,
+.managerFifthpage input[type="text"]:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.managerFifthpage input[type="text"] {
+    background-color: #fafafa; /* Light background for inputs */
+}
+
+.managerFifthpage button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Consistent font size */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.managerFifthpage button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,68 @@
+.managerPhotoDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.managerPhotoDetail .managerPhotoDetail-firstContainer {
+  background: white; /* White background for content */
+  width: 100%;
+  max-width: 600px; /* Limit maximum width for better readability */
+  padding: 40px; /* Add padding for internal spacing */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  @media (width < 900px) {
+    padding: 10px;
+  }
+}
+
+.managerPhotoDetail-firstContainer label {
+  font-size: 1.5rem; /* Larger font size for labels */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 10px; /* Space between label and input */
+  color: #333; /* Darker text color for better readability */
+  @media (width < 900px) {
+    font-size: 16px;
+  }
+}
+
+.managerPhotoDetail-firstContainer input,
+.managerPhotoDetail-firstContainer select {
+  width: 100%; /* Full width for inputs */
+  height: 50px; /* Consistent height for inputs */
+  font-size: 1.2rem; /* Font size for better visibility */
+  margin-bottom: 20px; /* Space between inputs */
+  padding: 10px; /* Padding inside inputs for better usability */
+  border: 1px solid #ced4da; /* Light border for inputs */
+  border-radius: 5px; /* Slightly rounded corners for inputs */
+  @media (width < 900px) {
+    padding: 5px;
+    height: auto;
+  }
+}
+
+.managerPhotoDetail-firstContainer button {
+  background-color: #6685cf; /* Bootstrap primary color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  height: 50px; /* Consistent height */
+  font-size: 1.2rem; /* Font size for better visibility */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: 0.1s;
+  padding: 0 10px;
+  @media (width < 900px){
+    padding: 10px;
+    height: auto;
+  }
+
+  &:active {
+    transform: translate(0, -3px);
+  }
+}
+
+.managerPhotoDetail-firstContainer p {
+  color: #dc3545; /* Bootstrap danger color for error messages */
+  font-size: 1rem; /* Standard size for error messages */
+  margin-top: 10px; /* Space above error messages */
+}

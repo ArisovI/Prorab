@@ -1,0 +1,143 @@
+.managerFourth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f4f8;
+    flex-direction: column; /* Светлый фон для контраста */
+}
+
+.container {
+    width: 1000px;
+    height: auto; /* Автоматическая высота */
+    background: white;
+    border: 1px solid #ccc; /* Более светлая граница */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    padding: 40px; /* Отступы для контента */
+}
+
+.container label {
+    font-size: 24px; /* Уменьшенный размер шрифта */
+    font-weight: 600;
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #333; /* Темный цвет текста */
+}
+
+.container input[type="text"],
+.container input[type="file"] {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 30px; /* Уменьшен отступ снизу */
+    margin-top: 10px; /* Уменьшен отступ сверху */
+    border: 1px solid #ccc; /* Светлая граница */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 10px; /* Отступы внутри */
+    font-size: 24px; /* Размер текста для лучшей читаемости */
+    outline: none; /* Убрать обводку при фокусе */
+    transition: border-color 0.3s; /* Плавный переход цвета границы */
+}
+
+.container input[type="file"] {
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.container input[type="text"]:focus,
+.container input[type="file"]:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+}
+
+.container button {
+    width: 80%;
+    height: 50px;
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убрать границу */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 18px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.container button:hover {
+    background-color: #0056b3; /* Темный цвет при наведении */
+}
+
+.container button:active {
+    transform: scale(0.98); /* Эффект нажатия */
+}
+
+.second-container {
+    width: 1000px; /* Ширина как у первого контейнера */
+    background: white; /* Белый фон для контраста */
+    border: 1px solid #ccc; /* Более светлая граница */
+    border-radius: 20px; /* Скругленные углы */
+    display: flex;
+    flex-direction: column; /* Вертикальная ориентация содержимого */
+    align-items: center; /* Центрирование содержимого по горизонтали */
+    justify-content: center; /* Центрирование содержимого по вертикали */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    padding: 40px; /* Отступы для контента */
+    margin-top: 30px; /* Отступ сверху */
+    transition: transform 0.2s; /* Плавный переход при наведении */
+}
+
+.second-container:hover {
+    transform: translateY(-2px); /* Поднятие при наведении */
+}
+
+.second-container label {
+    font-size: 24px; /* Размер шрифта как у первого контейнера */
+    font-weight: 600; /* Жирный шрифт */
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #333; /* Темный цвет текста */
+}
+
+.second-container select {
+    width: 80%; /* Полная ширина */
+    height: 50px; /* Высота селекта */
+    margin-bottom: 30px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Светлая граница */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 10px; /* Отступы внутри */
+    font-size: 24px; /* Размер текста для лучшей читаемости */
+    outline: none; /* Убираем стандартный контур при фокусе */
+    transition: border-color 0.3s; /* Плавный переход цвета границы */
+    background-color: #f9f9f9; /* Светло-серый фон для селекта */
+}
+
+.second-container select:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+}
+
+.second-container button {
+    width: 80%; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убрать границу */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 18px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.second-container button:hover {
+    background-color: #0056b3; /* Темный цвет при наведении */
+}
+
+.second-container button:active {
+    transform: scale(0.98); /* Эффект нажатия */
+}
+
+.second-container h2 {
+    font-size: 24px; /* Размер заголовка */
+    margin-bottom: 15px; /* Отступ снизу */
+    color: #007bff; /* Синий цвет для заголовка */
+    text-align: center; /* Центрируем заголовок */
+}

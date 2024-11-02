@@ -1,0 +1,96 @@
+.workerDocumentDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workerDocumentDetail-container {
+  width: 700px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (width < 900px) {
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+.workerDocumentDetail-container h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.workerDocumentDetail-form {
+  width: 100%;
+}
+
+.workerDocumentDetail-label {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+}
+
+.workerDocumentDetail-select,
+.workerDocumentDetail-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.workerDocumentDetail-select:focus,
+.workerDocumentDetail-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.workerDocumentDetail-fileInput {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  @media (width < 900px) {
+    height: 40px;
+    padding: 8px 10px;
+  }
+}
+
+.workerDocumentDetail-button {
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  background-color: #6685cf;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  @media (width < 900px) {
+    height: 40px;
+  }
+}
+
+.workerDocumentDetail-select:disabled,
+.workerDocumentDetail-input:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+}

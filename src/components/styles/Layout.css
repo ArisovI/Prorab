@@ -1,0 +1,12 @@
+.layout {
+    width: 100%;
+    height: 100vh;
+    background: url('../images//bg-photo.svg');
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.layout .content {
+    flex-grow: 1;
+}

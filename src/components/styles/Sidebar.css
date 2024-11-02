@@ -1,0 +1,50 @@
+.sidebar {
+    width: 323px;
+    height: 100vh;
+    background: #6685CF;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 123px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow-y: scroll;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+    display: flex;
+    margin-bottom: 80px;
+    text-wrap: wrap;
+
+    align-items: center;
+    transition: .3s;
+
+}
+
+.navbar a svg {
+    width: 40px;
+    height: 40px;
+    color: black;
+    transition: .3s;
+    margin-right: 20px;
+}
+
+svg path {
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar a:hover svg path {
+    stroke: white;
+}

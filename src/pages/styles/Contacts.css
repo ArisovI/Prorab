@@ -1,0 +1,53 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Убираем растяжение по вертикали */
+    padding: 20px;
+    max-width: 1400px; /* Ограничиваем максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+    box-sizing: border-box;
+}
+
+.workers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Отступы между карточками */
+    justify-content: space-between; /* Равномерное распределение карточек по ширине */
+    width: 100%; /* Чтобы flex-элементы заполняли всю ширину родительского контейнера */
+}
+
+.member {
+    width: 647px; /* Фиксированная ширина */
+    height: 247px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.member .avatar {
+    width: 200px;
+    height: 247px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member .texts {
+    width: 420px;
+    height: 220px;
+    background: #D2DDF8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texts h2 {
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 20px;
+}

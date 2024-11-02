@@ -1,0 +1,63 @@
+.managerPhotoDetail {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #f8f9fa; /* Light background for better contrast */
+    align-items: center;
+    justify-content: center;
+}
+
+.managerPhotoDetail .managerPhotoDetail-firstContainer {
+    width: 90%;
+    max-width: 600px; /* Limit maximum width for better readability */
+    padding: 30px; /* Add padding for internal spacing */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background: white; /* White background for content */
+}
+
+.managerPhotoDetail-firstContainer label {
+    font-size: 1.5rem; /* Larger font size for labels */
+    font-weight: 600; /* Bold font weight */
+    margin-bottom: 10px; /* Space between label and input */
+    color: #333; /* Darker text color for better readability */
+}
+
+.managerPhotoDetail-firstContainer input, 
+.managerPhotoDetail-firstContainer select {
+    width: 100%; /* Full width for inputs */
+    height: 50px; /* Consistent height for inputs */
+    font-size: 1.2rem; /* Font size for better visibility */
+    margin-bottom: 20px; /* Space between inputs */
+    padding: 0 10px; /* Padding inside inputs for better usability */
+    border: 1px solid #ced4da; /* Light border for inputs */
+    border-radius: 5px; /* Slightly rounded corners for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.managerPhotoDetail-firstContainer input:focus,
+.managerPhotoDetail-firstContainer select:focus {
+    border-color: #80bdff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.managerPhotoDetail-firstContainer button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    height: 50px; /* Consistent height */
+    font-size: 1.2rem; /* Font size for better visibility */
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.managerPhotoDetail-firstContainer button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.managerPhotoDetail-firstContainer p {
+    color: #dc3545; /* Bootstrap danger color for error messages */
+    font-size: 1rem; /* Standard size for error messages */
+    margin-top: 10px; /* Space above error messages */
+}

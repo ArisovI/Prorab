@@ -1,0 +1,120 @@
+.state {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.state-first {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.state-second {
+    width: 50%;
+    height: 100vh;
+}
+
+.state-chars {
+    width: 700px;
+    height: 400px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.state-chars .state-details {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.item-circle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background: #6685CF;
+    margin-right: 10px;
+}
+
+.detail-item h2:nth-child(1) {
+    display: flex;
+}
+
+.need {
+    color: #43E16F;
+}
+
+.detail-item h2:nth-child(2) {
+    color: #E14343;
+}
+
+.state-second-container {
+    width: 600px;
+    height: 800px;
+    background: white;
+    border-radius: 30px;
+}
+
+.state-second-container header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.state-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.state-second-container h1 {
+    width: 344px;
+    height: 70px;
+    border-radius: 30px;
+    background: #D2DDF8B2;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 70px;
+}
+
+.state-second-container-info {
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+}
+
+.state-second-container-info h2 {
+    font-weight: 400;
+}
+
+.stateBar {
+    width: 400px; /* Уменьшенная ширина */
+    height: 400px; /* Уменьшенная высота */
+    display: block;
+}
+
+.progressBar-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.dogovor {
+    margin-top: 50px;
+}

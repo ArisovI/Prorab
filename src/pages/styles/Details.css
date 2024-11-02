@@ -1,0 +1,87 @@
+.details {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-container {
+    width: 1000px;
+    height: 337px;
+    background: white;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.details-container .state-name {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.state-name h1 {
+    width: 388px;
+    height: 132px;
+    background: #D2DDF8;
+    font-size: 30px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 132px;
+}
+
+.details-container .state-progress {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.state-progress h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.progressBar {
+    width: 222px;
+    height: 222px;
+    margin-top: 10px;
+}
+
+.progressBar h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.details-folder {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payed h1 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.payed h2 {
+    color: #43E16F;
+    font-size: 16px;
+}

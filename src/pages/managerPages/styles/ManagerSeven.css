@@ -1,0 +1,91 @@
+/* Основные стили для всей страницы */
+.managerSeven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Контейнер для формы */
+.managerSeven-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Общие стили для меток */
+.managerSeven-container label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Общие стили для инпутов */
+.managerSeven-container input,
+.managerSeven-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fafafa;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+/* Стили для фокусировки на инпутах и селектах */
+.managerSeven-container input:focus,
+.managerSeven-container select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Стили для кнопки */
+.managerSeven-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Стили для hover состояния кнопки */
+.managerSeven-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для увеличения отступов */
+.managerSeven-container label,
+.managerSeven-container input,
+.managerSeven-container select,
+.managerSeven-container button {
+    margin-bottom: 15px;
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 480px) {
+    .managerSeven-container {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .managerSeven-container input,
+    .managerSeven-container select,
+    .managerSeven-container button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
