@@ -23,6 +23,8 @@ const PrivateRoute = ({ allowedRoles }) => {
       return <Navigate to="/managerFirstpage" />;
     } else if (userRole === "worker") {
       return <Navigate to="/workerHomepage" />;
+    } else if (userRole === "prorab") {
+      return <Navigate to="/prorab" />;
     }
   }
 

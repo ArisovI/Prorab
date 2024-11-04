@@ -58,6 +58,8 @@ const PrivateRoute = ({ allowedRoles }) => {
       return <Navigate to="/managerFirstpage" />;
     } else if (userRole === "worker") {
       return <Navigate to="/workerHomepage" />;
+    } else if (userRole === "prorab") {
+      return <Navigate to="/prorab" />;
     }
   }
 
@@ -76,7 +78,9 @@ function App() {
           {/* Общедоступные маршруты для всех авторизованных ролей */}
           <Route
             element={
-              <PrivateRoute allowedRoles={["client", "manager", "worker"]} />
+              <PrivateRoute
+                allowedRoles={["client", "manager", "worker", "prorab"]}
+              />
             }
           >
             <Route path="/homepage" element={<Homepage />} />
@@ -129,14 +133,19 @@ function App() {
             />
           </Route>
         </Route>
-        <Route path="/prorab" element={<HomeProrab />}>
-          <Route path="add-description" element={<AddDesc />} />
-          <Route path="resfresh-stage" element={<RefreshState />} />
-          <Route path="update-stage" element={<WorkerDetailPageProrab />} />
-          <Route path="add-photo-folder" element={<AddPhotoFolder />} />
-          <Route path="add-photo" element={<AddPhoto />} />
-          <Route path="add-documents-folder" element={<AddDocumentsFolder />} />
-          <Route path="add-documents" element={<AddDocuments />} />
+        <Route element={<PrivateRoute allowedRoles={["prorab"]} />}>
+          <Route path="/prorab" element={<HomeProrab />}>
+            <Route path="add-description" element={<AddDesc />} />
+            <Route path="resfresh-stage" element={<RefreshState />} />
+            <Route path="update-stage" element={<WorkerDetailPageProrab />} />
+            <Route path="add-photo-folder" element={<AddPhotoFolder />} />
+            <Route path="add-photo" element={<AddPhoto />} />
+            <Route
+              path="add-documents-folder"
+              element={<AddDocumentsFolder />}
+            />
+            <Route path="add-documents" element={<AddDocuments />} />
+          </Route>
         </Route>
       </Routes>
     </>

@@ -86,6 +86,7 @@ export default function ManagerRole() {
                     <option value="1">Работник</option>
                     <option value="2">Директор</option>
                     <option value="3">Клиент</option>
+                    <option value="4">Прораб</option>
                 </select>
 
                 <button onClick={handleSubmit}>Добавить Роль</button>

@@ -6,7 +6,6 @@ import "./styles/Login.css";
 import config from "../config";
 import { useUser } from "../UserContext"; // Import the context hook
 import gsap from "gsap"; // Импортируем GSAP
-import { Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -85,6 +84,8 @@ export default function Login() {
         }
       );
 
+      console.log(response);
+
       // Extract claims and token from the response
       const { claims, token } = response.data;
 
@@ -116,7 +117,7 @@ export default function Login() {
       setUserRole(role);
 
       // Redirect to the homepage
-      navigate("/homepage");
+      navigate("/prorab");
     } catch (err) {
       setError("Неверный email или пароль");
     }
@@ -129,7 +130,6 @@ export default function Login() {
   return (
     <div className="login-page">
       <div className="login" ref={loginRef}>
-        <Link to="/prorab">PRORAB</Link>
         <h1 ref={titleRef}>Вход</h1>
         <form onSubmit={handleLogin} className="inputs">
           <label>Email</label>
