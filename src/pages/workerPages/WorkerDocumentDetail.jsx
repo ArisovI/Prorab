@@ -30,6 +30,7 @@ export default function WorkerDocumentDetail() {
 
     const handleProjectChange = (e) => {
         const changedID = e.target.value;
+        console.log(changedID)
         setProjectID(changedID);
         axios.get(`${config.backendUrl}/api/document-folders/project/${changedID}`, {
             headers: { 'Authorization': `Bearer ${userInfo.token}` }

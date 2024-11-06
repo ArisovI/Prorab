@@ -5,10 +5,11 @@
     background-color: #f4f4f4; /* Light background for contrast */
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 
 .managerFifthpage .fifth-container {
-    width: 1000px;
+    width: 80%;
     border-radius: 8px; /* Rounded corners for a softer look */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     background-color: white; /* White background for content area */

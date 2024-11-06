@@ -159,6 +159,7 @@ export default function ManagerThird() {
           <option value="1">Работник</option>
           <option value="2">Менеджер</option>
           <option value="3">Клиент</option>
+          <option value="4">Прораб</option>
         </select>
         
         <button onClick={handleAddUserToProject}>Добавить</button>

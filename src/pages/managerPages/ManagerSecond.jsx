@@ -131,6 +131,8 @@ export default function ManagerSecond() {
     }
   };
 
+  console.log(users)
+
   return (
     <div className='managerSecondpage'>
       <header>
